@@ -1,0 +1,9 @@
+if member_id and joining_code_input:
+            teamInfo = teamCollection.find_one({"joining_code": joining_code_input})
+            if teamInfo:
+                # Iterate over the members array to find the member with the matching id
+                for member in teamInfo['members']:
+                    if member['id'] == member_id:
+                        memberInfo = member
+                        print(memberInfo)
+                        break
