@@ -7,7 +7,7 @@ from pymongo.server_api import ServerApi
 # Function to generate a random joining code
 def generate_joining_code():
     return ''.join(random.choices(string.ascii_uppercase + string.digits, k=6))
-# Display the logo image
+
 st.image('test4.jpg')
 
 uri = "mongodb+srv://kmmahi1810:mahi150KM@cluster0.nxwyefr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
